@@ -1,4 +1,7 @@
+import menuPage from "./menu"
+
 export default function homePage(content) {
+    content.textContent=""
     const header = document.createElement('header')
     const container = document.createElement('div')
     const logo = document.createElement('h1')
@@ -15,6 +18,9 @@ export default function homePage(content) {
     home.textContent = "Home"
     menu.textContent = "Menu"
     about.textContent = "About"
+    home.setAttribute('id','home')
+    menu.setAttribute('id','menu')
+    about.setAttribute('id','about')
     
     content.appendChild(header)
     header.appendChild(container)
@@ -40,4 +46,8 @@ export default function homePage(content) {
     slogan.appendChild(mainSlogan)
     slogan.appendChild(secondSlogan)
     main.appendChild(orderButton)
+
+    const menuButton = document.getElementById('menu')
+    menuButton.addEventListener('click', () => menuPage(content))
+    orderButton.addEventListener('click', () => menuPage(content))
 }

@@ -482,9 +482,41 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
@@ -546,13 +578,221 @@ var update = injectStylesIntoStyleTag_default()(styles/* default */.Z, options);
 
        /* harmony default export */ const src_styles = (styles/* default */.Z && styles/* default.locals */.Z.locals ? styles/* default.locals */.Z.locals : undefined);
 
+;// CONCATENATED MODULE: ./src/img/bitter.png
+const bitter_namespaceObject = __webpack_require__.p + "26fe0bd3ff2a8f433910.png";
+;// CONCATENATED MODULE: ./src/img/milk.png
+const milk_namespaceObject = __webpack_require__.p + "9f7dcf6393967dbbb7a3.png";
+;// CONCATENATED MODULE: ./src/img/milk and bitter.png
+const milk_and_bitter_namespaceObject = __webpack_require__.p + "59cab277901ba3e77c95.png";
+;// CONCATENATED MODULE: ./src/img/package.png
+const package_namespaceObject = __webpack_require__.p + "bcec74ee3413eb69a956.png";
+;// CONCATENATED MODULE: ./src/img/rainbow.png
+const rainbow_namespaceObject = __webpack_require__.p + "0daca76dae273e67bbb0.png";
+;// CONCATENATED MODULE: ./src/img/&.png
+const _namespaceObject = __webpack_require__.p + "3bc26ebbf1c1eaa6aa5e.png";
+;// CONCATENATED MODULE: ./src/img/birthdayCake.png
+const birthdayCake_namespaceObject = __webpack_require__.p + "2dc93b111e5c2b013c31.png";
+;// CONCATENATED MODULE: ./src/img/Christmas.png
+const Christmas_namespaceObject = __webpack_require__.p + "96cbde78ce35dccdfb26.png";
+;// CONCATENATED MODULE: ./src/menu.js
+
+
+
+
+
+
+
+
+
+
+function menuPage(content) {
+    content.textContent = ""
+    const header = document.createElement('header')
+    const container = document.createElement('div')
+    const logo = document.createElement('h1')
+    const links = document.createElement('div')
+    const home = document.createElement('h3')
+    const menu = document.createElement('h3')
+    const about = document.createElement('h3')
+
+    container.classList.add('container')
+    logo.classList.add('logo')
+    logo.textContent = "SEVDEM"
+    links.classList.add('links')
+    menu.classList.add('active')
+    home.textContent = "Home"
+    menu.textContent = "Menu"
+    about.textContent = "About"
+    home.setAttribute('id','home')
+    menu.setAttribute('id','menu')
+    about.setAttribute('id','about')
+    
+    content.appendChild(header)
+    header.appendChild(container)
+    container.appendChild(logo)
+    container.appendChild(links)
+    links.appendChild(home)
+    links.appendChild(menu)
+    links.appendChild(about) 
+
+    const menuMain = document.createElement('div')
+    const menuContainer = document.createElement('div')
+    const firstCard = document.createElement('div')
+    const secondCard = document.createElement('div')
+    const thirdCard = document.createElement('div')
+    const fourthCard = document.createElement('div')
+    const fifthCard = document.createElement('div')
+    const sixthCard = document.createElement('div')
+    const seventhCard = document.createElement('div')
+    const eighthCard = document.createElement('div')
+    const firstImg = document.createElement('img')
+    const secondImg = document.createElement('img')
+    const thirdImg = document.createElement('img')
+    const fourthImg = document.createElement('img')
+    const fifthImg = document.createElement('img')
+    const sixthImg = document.createElement('img')
+    const seventhImg = document.createElement('img')
+    const eighthImg = document.createElement('img')
+    const firstHeader = document.createElement('h4')
+    const secondHeader = document.createElement('h4')
+    const thirdHeader = document.createElement('h4')
+    const fourthHeader = document.createElement('h4')
+    const fifthHeader = document.createElement('h4')
+    const sixthHeader = document.createElement('h4')
+    const seventhHeader = document.createElement('h4')
+    const eighthHeader = document.createElement('h4')
+
+    menuMain.classList.add('menu')
+    menuContainer.classList.add('menuContainer')
+    firstCard.classList.add('card')
+    secondCard.classList.add('card')
+    thirdCard.classList.add('card')
+    fourthCard.classList.add('card')
+    fifthCard.classList.add('card')
+    sixthCard.classList.add('card')
+    seventhCard.classList.add('card')
+    eighthCard.classList.add('card')
+    firstHeader.classList.add('card-header')
+    secondHeader.classList.add('card-header')
+    thirdHeader.classList.add('card-header')
+    fourthHeader.classList.add('card-header')
+    fifthHeader.classList.add('card-header')
+    sixthHeader.classList.add('card-header')
+    seventhHeader.classList.add('card-header')
+    eighthHeader.classList.add('card-header')
+
+    firstImg.src = `${bitter_namespaceObject}`
+    secondImg.src = `${milk_namespaceObject}`
+    thirdImg.src = `${milk_and_bitter_namespaceObject}`
+    fourthImg.src = `${package_namespaceObject}`
+    fifthImg.src = `${rainbow_namespaceObject}`
+    sixthImg.src = `${_namespaceObject}`
+    seventhImg.src = `${birthdayCake_namespaceObject}`
+    eighthImg.src = `${Christmas_namespaceObject}`
+
+    firstHeader.textContent = 'BITTER CHOCOLATE'
+    secondHeader.textContent = 'MILK CHOCOLATE'
+    thirdHeader.textContent = 'ENJOY BOTH TASTES'
+    fourthHeader.textContent = 'BUY IN PACK'
+    fifthHeader.textContent = 'UNLIMITED TASTES'
+    sixthHeader.textContent = '&'
+    seventhHeader.textContent = 'NOT ONLY CHOCOLATES'
+    eighthHeader.textContent = 'EVEN CHRISTMAS HOMES'
+
+    content.appendChild(menuMain)
+    menuMain.appendChild(menuContainer)
+    menuContainer.appendChild(firstCard)
+    menuContainer.appendChild(secondCard)
+    menuContainer.appendChild(thirdCard)
+    menuContainer.appendChild(fourthCard)
+    menuContainer.appendChild(fifthCard)
+    menuContainer.appendChild(sixthCard)
+    menuContainer.appendChild(seventhCard)
+    menuContainer.appendChild(eighthCard)
+    firstCard.appendChild(firstImg)
+    firstCard.appendChild(firstHeader)
+    secondCard.appendChild(secondImg)
+    secondCard.appendChild(secondHeader)
+    thirdCard.appendChild(thirdImg)
+    thirdCard.appendChild(thirdHeader)
+    fourthCard.appendChild(fourthImg)
+    fourthCard.appendChild(fourthHeader)
+    fifthCard.appendChild(fifthImg)
+    fifthCard.appendChild(fifthHeader)
+    sixthCard.appendChild(sixthImg)
+    sixthCard.appendChild(sixthHeader)
+    seventhCard.appendChild(seventhImg)
+    seventhCard.appendChild(seventhHeader)
+    eighthCard.appendChild(eighthImg)
+    eighthCard.appendChild(eighthHeader)
+
+    const homeButton = document.getElementById('home')
+    homeButton.addEventListener('click', () => homePage(content))
+
+}
+;// CONCATENATED MODULE: ./src/home.js
+
+
+function homePage(content) {
+    content.textContent=""
+    const header = document.createElement('header')
+    const container = document.createElement('div')
+    const logo = document.createElement('h1')
+    const links = document.createElement('div')
+    const home = document.createElement('h3')
+    const menu = document.createElement('h3')
+    const about = document.createElement('h3')
+
+    container.classList.add('container')
+    logo.classList.add('logo')
+    logo.textContent = "SEVDEM"
+    links.classList.add('links')
+    home.classList.add('active')
+    home.textContent = "Home"
+    menu.textContent = "Menu"
+    about.textContent = "About"
+    home.setAttribute('id','home')
+    menu.setAttribute('id','menu')
+    about.setAttribute('id','about')
+    
+    content.appendChild(header)
+    header.appendChild(container)
+    container.appendChild(logo)
+    container.appendChild(links)
+    links.appendChild(home)
+    links.appendChild(menu)
+    links.appendChild(about) 
+
+    const main = document.createElement('main')
+    const slogan = document.createElement('div')
+    const mainSlogan = document.createElement('h1')
+    const secondSlogan = document.createElement('h3')
+    const orderButton = document.createElement('button')
+
+    orderButton.textContent = "Order Now"
+    mainSlogan.textContent = "Sevdem Will Brighten Your Day"
+    secondSlogan.textContent = "7/24 Open"
+    slogan.classList.add('slogan')
+
+    content.appendChild(main)
+    main.appendChild(slogan)
+    slogan.appendChild(mainSlogan)
+    slogan.appendChild(secondSlogan)
+    main.appendChild(orderButton)
+
+    const menuButton = document.getElementById('menu')
+    menuButton.addEventListener('click', () => menuPage(content))
+}
 ;// CONCATENATED MODULE: ./src/main.js
 
 
 
 const content = document.getElementById('content')
 
-// homePage(content)
+homePage(content)
+
+
+// menuPage(content)
 })();
 
 /******/ })()
