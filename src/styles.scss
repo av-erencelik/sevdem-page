@@ -2,8 +2,15 @@
     margin: 0;
     padding: 0;
 }
+@font-face {
+    font-family: 'myFont';
+    src: url(DanceToday-JRdzM.otf) format('otf');
+    font-weight: 600;
+    font-style: normal;
+}
 body {
     height: 100vh;
+    font-family: 'myFont';
     header {
         background-color: #D7C0AE;
         color: #562B08;
@@ -81,5 +88,64 @@ body {
             cursor: pointer;
 
         }
+    }
+    .menu {
+        background: linear-gradient(
+            to right,
+            #D7C0AE, #876445
+        );
+        background-size: 400% 400%;
+        animation: animate-background 5s infinite ease-in-out;
+        padding-top: 10rem;
+        min-height: 80vh;
+        .menuContainer {
+            width: 75%;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+            gap: 0.5rem;
+            .card {
+                min-height: 200px;
+                text-align: center;
+                padding: 1rem;
+                img {
+                    width: 70%;
+                    border-radius: 50%;
+                    transition: all 0.5s;
+                    margin-bottom: 1rem;
+                }
+                .card-header {
+                    padding-top: 1rem;
+                    border-top: 1px solid white;
+                    width: 70%;
+                    margin: 0 auto;
+                    color: white;
+                    transition: all 0.4s;
+                    font-size: 1.2rem;
+                }
+            }
+            .card:hover {
+                .card-header {
+                    color: #562B08;
+                    border-color: #562B08;
+                }
+                img {
+                    border-radius: 10px;
+                    scale: 1.15;
+                }
+            }
+        }
+    }
+}
+// animation
+@keyframes animate-background {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
     }
 }
