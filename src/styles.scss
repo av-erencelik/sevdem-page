@@ -1,4 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     height: 100vh;
-    background-color: red;
+    header {
+        background-color: #D7C0AE;
+        color: #562B08;
+        padding: 1rem 0;
+        .container {
+            display: flex;
+            align-items: center;
+            width: 75%;
+            margin: 0 auto;
+            .logo {
+                margin-right: auto;
+            }
+            .links {
+                display: flex;
+                align-items: center;
+                gap: 2rem;
+                h3 {
+                    border: 3px solid #562B08;
+                    padding: 0.5rem 1rem;
+                    border-radius: 7px;
+                    transition: all 0.4s;
+                }
+                h3:hover {
+                    background-color: #562B08;
+                    color: #D7C0AE;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    main {
+        background-image: url(img/main.jpg);
+        background-color: #562b08;
+        background-position:top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 95vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        .slogan {
+            max-width: 100%;
+            padding: 2rem;
+            h1 {
+                font-size: 4rem;
+                color: #D7C0AE;
+            }
+            h3 {
+                font-size: 2rem;
+                color: #D7C0AE;
+                text-align: center;
+                padding-top: 2rem;
+            }
+        }
+        button {
+            padding: 1rem 2rem;
+            background-color: #562B08;
+            color: #D7C0AE;
+            border: none;
+            border-radius: 7px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            transition: all 0.4s;
+        }
+        button:hover {
+            background-color: #D7C0AE;
+            color: #562B08;
+            cursor: pointer;
+
+        }
+    }
 }
