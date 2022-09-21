@@ -25,6 +25,11 @@ body {
                     padding: 0.5rem 1rem;
                     border-radius: 7px;
                     transition: all 0.4s;
+                    
+                }
+                .active {
+                    background-color: #562B08;
+                    color: #D7C0AE;
                 }
                 h3:hover {
                     background-color: #562B08;
