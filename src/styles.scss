@@ -136,6 +136,74 @@ body {
             }
         }
     }
+    .about {
+        background-color: #562B08;
+        height: 85vh;
+        h2 {
+            text-align: center;
+            padding: 2rem;
+            padding-top: 5rem;
+            color: #D7C0AE;
+            font-size: 2.5rem;
+        }
+        .contact {
+            background-color: #D7C0AE;
+            width: 75%;
+            margin: 0 auto;
+            padding: 1rem;
+            padding-top: 3rem;
+            img {
+                border-radius: 50%;
+                width: 10%;
+            }
+            .img {
+                text-align: center;
+            }
+            .infos {
+                padding: 2rem;
+                .contactHeader {
+                    text-align: center;
+                }
+                .info {
+                    margin-top: 5rem;
+                    display: flex;
+                    justify-content: center;
+                }
+                p {
+                    padding: 1rem;
+                    font-size: 1.2rem;
+                    color: #562B08;
+                    font-weight: 700;
+                    text-align: center;
+                    a {
+                        text-decoration: none;
+                        color: #562B08;
+                        font-weight: 700;
+                        box-shadow: inset 0 0 0 0 #562B08;
+                        margin: 0 -0.25rem;
+                        padding: .25rem .25rem;
+                        transition: color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+                    }
+                    a:hover {
+                        box-shadow: inset 200px 0 0 0 #562B08;
+                        color: #D7C0AE;
+                    }
+                }
+                .fa-location-pin {
+                        color: #562B08;
+                        margin-right: 1rem;
+                }
+                .fa-mobile {
+                    color: #562B08;
+                    margin-right: 1rem;
+                }
+                .fa-square-instagram {
+                    color: #562B08;
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
 }
 // animation
 @keyframes animate-background {
