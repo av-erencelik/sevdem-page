@@ -1,4 +1,5 @@
 import menuPage from "./menu"
+import aboutPage from "./about"
 
 export default function homePage(content) {
     content.textContent=""
@@ -50,4 +51,6 @@ export default function homePage(content) {
     const menuButton = document.getElementById('menu')
     menuButton.addEventListener('click', () => menuPage(content))
     orderButton.addEventListener('click', () => menuPage(content))
+    const aboutButton = document.getElementById('about')
+    aboutButton.addEventListener('click', () => aboutPage(content))
 }

@@ -7,6 +7,7 @@ import and from './img/&.png'
 import cake from './img/birthdayCake.png'
 import christmas from './img/Christmas.png'
 import homePage from './home'
+import aboutPage from './about'
 
 export default function menuPage(content) {
     content.textContent = ""
@@ -131,5 +132,7 @@ export default function menuPage(content) {
 
     const homeButton = document.getElementById('home')
     homeButton.addEventListener('click', () => homePage(content))
+    const aboutButton = document.getElementById('about')
+    aboutButton.addEventListener('click', () => aboutPage(content))
 
 }
