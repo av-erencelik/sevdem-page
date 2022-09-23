@@ -16,7 +16,7 @@
   <br>
   6- How to import and export elements from one .js file to another.
   <br>
-  7- difference between innerHTML and TextContent properties.
+  7- Difference between innerHTML and TextContent properties.
   <br>
   8- How to publish only dist folder of webpack project on github pages. 
   <br>
